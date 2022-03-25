@@ -1,0 +1,19 @@
+{
+  "name": "playwrightprojects",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/cucumber-js ./myTests/myTestsFeatures --require ./myTests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@cucumber/cucumber": "^7.3.2",
+    "@playwright/test": "^1.20.0"
+  },
+  "dependencies": {
+    "chai": "^4.3.6"
+  }
+}
