@@ -49,24 +49,13 @@ let writeCommentToAssignedWorkOrders = async (workOrderId, userName, userPass, t
 
 const workOrderList = new Array(178047, 178049, 178042);
 const providerCreds = ["benzema.goalmachine", "1"];
-    // const buyerCreds = ["premierBuyerCompany1615273528", "1"];
-
-    // generating random text 
-const allCapsAlpha = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];             // this declaration will split the string into ["A", "B", "C"........."Z"]
-const allLowerAlpha = [..."abcdefghijklmnopqrstuvwxyz"]; 
-const allNumbers = [..."0123456789"];
     
-const base = [...allCapsAlpha, ...allNumbers, ...allLowerAlpha];
-    
-const generator = (base, len) => {
-    return [...Array(len)]
-        .map(i => base[Math.random()*base.length|0])
-        .join('');
-};
 
-for (woID in workOrderList){
-   // put comment into an assigned work order
-   var woText = workOrderList[woID] + generator(base, 28);
+for (woID in workOrderList){   
+   // generating random text 
+   let randomText = (Math.random()+1).toString(36).substring(7);   
+   var woText = workOrderList[woID] + " " + randomText;
    console.log(woText);
+   // put comment into an assigned work order
    writeCommentToAssignedWorkOrders(workOrderList[woID], providerCreds[0], providerCreds[1], woText);
 }
