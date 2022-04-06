@@ -1,0 +1,23 @@
+{
+  "name": "learning-test-automation-using-playwright-and-javascript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raajputro/Learning-Test-Automation-using-Playwright-and-JavaScript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/raajputro/Learning-Test-Automation-using-Playwright-and-JavaScript/issues"
+  },
+  "homepage": "https://github.com/raajputro/Learning-Test-Automation-using-Playwright-and-JavaScript#readme",
+  "dependencies": {
+    "playwright": "^1.20.2"
+  }
+}
