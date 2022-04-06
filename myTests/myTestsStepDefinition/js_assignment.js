@@ -37,7 +37,7 @@ let writeCommentToAssignedWorkOrders = async (workOrderId, userName, userPass, t
     await page.click(sendButtonElement);
     await page.waitForTimeout(5000);
 
-    await page.screenshot({path:workOrderId+'SS.png'});
+    await page.screenshot({path:'Screenshot of '+workOrderId+'.png'});
 
     // navigate to logout url
     await page.goto(logoutUrl);
@@ -52,7 +52,7 @@ const providerCreds = ["benzema.goalmachine", "1"];
     // const buyerCreds = ["premierBuyerCompany1615273528", "1"];
 
     // generating random text 
-const allCapsAlpha = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"]; 
+const allCapsAlpha = [..."ABCDEFGHIJKLMNOPQRSTUVWXYZ"];             // this declaration will split the string into ["A", "B", "C"........."Z"]
 const allLowerAlpha = [..."abcdefghijklmnopqrstuvwxyz"]; 
 const allNumbers = [..."0123456789"];
     
